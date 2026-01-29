@@ -1,0 +1,48 @@
+
+html, body { height: 100% }
+
+body {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    
+    font-family: 'JetBrains Mono Variable', monospace;
+    background-color: #1f1f1f;
+    color: #ccc;
+
+}
+
+main {
+
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 5rem 1rem 3rem;
+    border-radius: 1rem;
+    // width: 500px;
+    max-width: calc(100% - 100px);
+
+    * { display: inline-block }
+
+    & > * {
+        position: relative;
+        padding-left: 1rem;
+    }
+
+    .ident { padding-left: 1rem + 2rem }
+    a { color: inherit }
+
+    .comment  { color: #6a9955 }
+    .function { color: #dcdcaa }
+    .yellow   { color: #ffd700 }
+    .string   { color: #ce9178 }
+    .var      { color: #9cdcfe }
+    .arrow    { color: #569cd6 }
+    .purple   { color: #da70d6 }
+    .const    { color: #4fc1ff }
+    .keyword  { color: #569cd6 }
+
+    #preventDefault-config { cursor: pointer }
+
+}
